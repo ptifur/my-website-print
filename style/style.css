@@ -17,6 +17,10 @@
     flex-direction: column;
 }
 
+.lock {
+    overflow: hidden;
+}
+
 header {
     width: 65vw;
     padding: 38px 0;
@@ -24,6 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    position: relative;
 }
 
 nav {
@@ -32,6 +37,10 @@ nav {
     justify-content: space-between;
     width: 30vw;
     max-width: 500px;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 li {
@@ -255,10 +264,36 @@ footer {
         display: none;
     }
 
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #fa5555;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: -5vw;
+        top: 0;
+        transform: translateY(-100%);
+        transition: ease 500ms all;
+    }
+
+    .visible {
+        transform: translateY(0%);
+    }
+
+    .nav-mobile .link {
+        font-size: 1.5em;
+        font-weight: 400;
+        margin-bottom: 0vh;
+    }
+
     .burger-button {
         display: block;
         font-size: 1.8em;
         cursor: pointer;
+        z-index: 10;
     }
 
     .hero {

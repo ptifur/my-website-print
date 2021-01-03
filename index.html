@@ -17,11 +17,16 @@
             </nav>
             <div class="burger-button">☰</div>
             <!-- ✕ -->
+            <div class="nav-mobile">
+                <li><a href="" target="_blank" class="link">CV</a></li>
+                <li><a href="https://behance.net/ptifur" target="_blank" class="link">Behance</a></li>
+                <li><a href="#get-in-touch" class="button">Get In Touch</a></li>
+            </div>
         </header>
         <div class="hero">
             <h1>Hey! My name is Yar</h1>
             <p>I design brochures and catalogues for print.</p>
-            <p>You may find examples on my <a href="https://behance.net/ptifur" target="_blank" class="inline-link">Behance</a> page</p>
+            <p>You may find examples on my <a href="https://behance.net/ptifur" target="_blank" class="inline-link">Behance</a> page.</p>
         </div>
         <div class="services">
             <div class="service">
@@ -55,10 +60,31 @@
         </footer>
     </div>
     <script>
+        // form
         const sendButton = document.getElementById('button-send')
+
         sendButton.addEventListener('click', (e) => {
             e.preventDefault()
         })
+
+        const burgerButton = document.querySelector('.burger-button')
+        const navMobile = document.querySelector('.nav-mobile')
+        const body = document.querySelector('body')
+        const navLinks = document.querySelectorAll('.nav-mobile a')
+
+        const displayMenu = () => {
+            // display mobile menu
+            navMobile.classList.toggle('visible')
+            // disable scrolling when menu is open
+            body.classList.toggle('lock')
+        }
+
+        // menu button
+        burgerButton.addEventListener('click', displayMenu)
+
+        // when click the mobile view link
+        navLinks.forEach(navLink => navLink.addEventListener('click', displayMenu))
+
     </script>
     
 </body>
