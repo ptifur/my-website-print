@@ -4,8 +4,6 @@
 
 - Burger menu
 
-- Footer mobile view
-
 ## Form
 
 Actually set up the form

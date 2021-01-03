@@ -63,6 +63,7 @@ li {
     font-size: .8em;
     letter-spacing: 1px;
     box-shadow: 6px 6px 10px #33333333;
+    cursor: pointer;
 }
 
 .send {
@@ -101,6 +102,7 @@ li {
 h1 {
     font-size: 2.5em;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .inline-link {
@@ -255,7 +257,8 @@ footer {
 
     .burger-button {
         display: block;
-        font-size: 1.5em;
+        font-size: 1.8em;
+        cursor: pointer;
     }
 
     .hero {
@@ -275,7 +278,11 @@ footer {
     }
 
     .footer-nav {
-        display: none;
+        width: auto;
+    }
+
+    .footer-nav .link {
+        margin-left: 15px;
     }
 
 }
