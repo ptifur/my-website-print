@@ -102,10 +102,24 @@ li {
     padding-bottom: 75px;
     border-radius: 15px;
     line-height: 1.7;
+    position: relative;
 }
 
 .hero p {
     font-size: 1.35em;
+}
+
+.hero::before {
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: url(../images/me.png) no-repeat #f6f6f600;
+    background-position: 0 20px;
+    background-size: 250px;
+    position: absolute;
+    right: 3vw;
+    border-radius: 15px;
+    z-index: -1;
 }
 
 h1 {
@@ -136,9 +150,8 @@ h1 {
     padding-bottom: 55px;
     /* border-top: #eeeeee 1.5px solid;
     border-bottom: #eeeeee 1.5px solid; */
-    background: url(../images/texture1.png) #f5f5f5;
-    background-position: center;
-    background-size: 70%;
+    background: #f5f5f5;
+    background: linear-gradient(0deg, #f0efef 0%, #f5f6f6 100%);
     border-radius: 12px;
 }
 
@@ -159,19 +172,19 @@ h1 {
 }
 
 .pic1 {
-    background: url(../images/pic1.jpg) no-repeat #ffffff;
+    background: url(../images/pic4.png) no-repeat #ffffff;
     background-position: center;
     background-size: cover;
 }
 
 .pic2 {
-    background: url(../images/pic2.jpg) no-repeat #ffffff;
+    background: url(../images/pic5.png) no-repeat #ffffff;
     background-position: center;
     background-size: cover;
 }
 
 .pic3 {
-    background: url(../images/pic3.jpg) no-repeat;
+    background: url(../images/pic6.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -199,7 +212,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     width: 35vw;
-    margin: 45px 0;
+    margin: 55px 0;
 }
 
 form {
@@ -217,9 +230,10 @@ form::before {
     height: 200px;
     background: url(../images/zoom-call.png) no-repeat;
     background-position: center;
-    background-size: 180px;
+    background-size: 200px;
     position: absolute;
     right: -220px;
+    top: 60px;
 }
 
 input,
@@ -273,6 +287,10 @@ footer {
 
     nav {
         width: 35vw;
+    }
+
+    .hero {
+        width: 90%;
     }
 
     .services {
