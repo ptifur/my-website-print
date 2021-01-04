@@ -6,20 +6,16 @@
 
 - Burger menu change icon
 
-Images links to Behance
-
-## Form
-
-- Actually set up the form
-
-## Other
-
 - Favicon
 
 - Draw beard
 
 - Third finger redraw
 
-- Schedule text
+- Schedule text redraw
 
 - Button top marging more
+
+## Form
+
+- Actually set up the form
