@@ -268,8 +268,8 @@ footer {
 
 .footer-nav {
     display: flex;
-    width: 30vw;
-    justify-content: space-between;
+    /* width: 30vw; */
+    justify-content: flex-end;
 }
 
 .footer-nav .link {
@@ -350,6 +350,10 @@ footer {
         width: 90%;
     }
 
+    .hero::before {
+        content: none;
+    }
+
     .services {
         flex-direction: column;
     }
@@ -364,6 +368,7 @@ footer {
 
     .footer-nav {
         width: auto;
+        flex-direction: column;
     }
 
     .footer-nav .link {

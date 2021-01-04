@@ -22,8 +22,4 @@ Images links to Behance
 
 - Schedule text
 
-- Bottom nav closer, stick to the right
-
-Button top marging more
-
-© Y
+- Button top marging more
