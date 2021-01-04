@@ -35,7 +35,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30vw;
+    width: 28vw;
     max-width: 500px;
 }
 
@@ -134,8 +134,12 @@ h1 {
     justify-content: space-evenly;
     padding-top: 45px;
     padding-bottom: 55px;
-    border-top: #eeeeee 1.5px solid;
-    border-bottom: #eeeeee 1.5px solid;
+    /* border-top: #eeeeee 1.5px solid;
+    border-bottom: #eeeeee 1.5px solid; */
+    background: url(../images/texture1.png) #f5f5f5;
+    background-position: center;
+    background-size: 70%;
+    border-radius: 12px;
 }
 
 .service {
@@ -152,6 +156,24 @@ h1 {
     border: none;
     border-radius: 6px;
     box-shadow: 6px 6px 15px #33333333;
+}
+
+.pic1 {
+    background: url(../images/pic1.jpg) no-repeat #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+
+.pic2 {
+    background: url(../images/pic2.jpg) no-repeat #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+
+.pic3 {
+    background: url(../images/pic3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .image:hover {
@@ -232,12 +254,13 @@ footer {
 
 .footer-nav {
     display: flex;
-    width: 25vw;
+    width: 30vw;
     justify-content: space-between;
 }
 
 .footer-nav .link {
-    margin-left: 25px;
+    margin-left: 5px;
+    margin-right: 25px;
     color: #666666;
     font-size: .9em;
 }
@@ -254,6 +277,11 @@ footer {
 
     footer {
         width: 90%;
+    }
+
+    .footer-nav {
+        display: flex;
+        width: 40vw;
     }
 
 }
