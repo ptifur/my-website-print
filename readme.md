@@ -2,8 +2,8 @@
 
 ## Next
 
-- Burger menu
+- Burger menu change icon
 
 ## Form
 
-Actually set up the form
+- Actually set up the form
