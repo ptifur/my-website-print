@@ -2,9 +2,17 @@
 
 *Jan 2021*
 
+## layout branch
+
+Layout from scratch to make it work in Safari
+
 ## Next
 
-- Burger menu change icon
+- images inside container. so it won't affect the other columns
+
+## Later today
+
+- Burger button
 
 - Favicon
 
