@@ -6,13 +6,13 @@
 
 - Burger button
 
+## Redraw
+
 - Draw beard
 
-- Third finger redraw
+- Third finger
 
-- Schedule text redraw
-
-- Button top marging more
+- Schedule text
 
 ## Forms option
 
