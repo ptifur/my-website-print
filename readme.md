@@ -2,10 +2,6 @@
 
 *Jan 2021*
 
-## Next
-
-- Burger button
-
 ## Redraw
 
 - Draw beard

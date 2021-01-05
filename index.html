@@ -15,8 +15,7 @@
                 <li>🔦 <a href="https://behance.net/ptifur" target="_blank" class="link">Behance</a></li>
                 <li><a href="#get-in-touch" class="button">Get In Touch</a></li>
             </nav>
-            <div class="burger-button">☰</div>
-            <!-- ✕ -->
+            <div class="burger-button open">☰</div>
         </header>
 
         <div class="hero">
@@ -71,7 +70,6 @@
         </footer>
         
         <div class="nav-mobile">
-            <!-- <li><a href="" target="_blank" class="link">CV</a></li> -->
             <li><a href="https://behance.net/ptifur" target="_blank" class="link">Behance</a></li>
             <li><a href="#get-in-touch" class="button">Get In Touch</a></li>
         </div>
@@ -85,14 +83,22 @@
         const displayMenu = () => {
             // display mobile menu
             navMobile.classList.toggle('visible')
+
             // disable scrolling when menu is open
             body.classList.toggle('lock')
+
+            // toggle burger button
+            if (burgerButton.textContent === '☰') {
+                burgerButton.textContent = '✕'
+            } else {
+                burgerButton.textContent = '☰'
+            }
         }
 
         // menu button
         burgerButton.addEventListener('click', displayMenu)
 
-        // when click the mobile view link
+        // fire the function when click the mobile menu
         navLinks.forEach(navLink => navLink.addEventListener('click', displayMenu))
 
     </script>
