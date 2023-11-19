@@ -1,14 +1,6 @@
 ## Print Design website
 
-*Jan 2021*
-
-## Redraw
-
-- Draw beard
-
-- Third finger
-
-- Schedule text
+Some clean up
 
 ## Forms option
 
